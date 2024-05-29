@@ -1,323 +1,71 @@
-*,
-*::before,
-*::after {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-/* Header CSS */
-
-/* Common CSS */
-
-.mainHeader,
-.logoDiv,
-.headerBtnDiv {
-  display: flex;
-}
-
-.mainHeader {
-  justify-content: space-between;
-  margin: 0.25em 0.75em;
-  padding: 0.25em 0.75em;
-}
-
-/* Complete Logo CSS */
-
-.logoDiv {
-  align-items: center;
-}
-
-.logoImg {
-  width: 23px;
-  height: 23px;
-}
-
-.logoText {
-  display: inline;
-  font-size: 0.844rem;
-  padding: 0 0.37em;
+html {
+  font-size: 62.5%;
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
 }
 
-/* Header - buttons CSS */
-
-.headerBtnDiv {
-  align-items: center;
-  column-gap: 0.94em;
+li {
+  list-style: none;
 }
 
-.headerBtn {
-  background: none;
-  border: none;
-  font-size: 0.75rem;
-  font-family: "Source Sans 3", sans-serif;
-  font-weight: 600;
-  cursor: pointer;
+a {
+  text-decoration: none;
 }
 
-.headerBtn:active,
-.headerBtn:focus {
-  outline: none;
+.header {
+  border-bottom: 1px solid #e2e8f0;
 }
 
-/* Footer CSS */
-
-.mainFooter {
+.navbar {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: #202020;
-  padding: 2.18em 0;
+  padding: 1rem 1.5rem;
 }
 
-.footH3,
-.footP {
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 0.75rem;
-  margin: 0;
-}
-
-.footH3 {
-  color: #ececec;
-  font-weight: 700;
-}
-
-.footP {
-  color: #d7d7d7;
-  padding-top: 0.42em;
-}
-
-/* Hero post */
-
-.heroImg {
-  padding: 0.94em 0 0.625em 0;
-  width: 100%;
-}
-
-.heroPostDiv {
-  display: block;
-  background: url("../images/article-image-hero.jpg");
-  background-size: cover;
-  padding: 1.25em;
-  cursor: pointer;
-}
-
-.heroTextContainer {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.heroPostText {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  min-height: 290px;
-  max-width: 660px;
-  font-family: "Source Sans 3", sans-serif;
-  color: #ffffff;
-  margin: 0 auto 0 0;
-}
-
-.heroPostText span {
-  font-size: 0.75rem;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-}
-
-.heroPostText h1 {
-  font-size: 2rem;
-  margin: 0;
-  padding: 0.31em 0 0 0;
-}
-
-.heroPostText p {
-  font-size: 1rem;
-  margin: 0;
-  padding: 0.625em 0;
-}
-
-/* About me part CSS */
-
-.aboutMeTextDark {
-  color: #151515;
-  padding: 0.625rem 0 0 0;
-  font-family: "Source Sans 3", sans-serif;
-}
-
-.heroPostTextDark {
-  color: #151515;
-  min-height: 0;
-  padding: 0.625rem 0 0 0;
-  font-family: "Source Sans 3", sans-serif;
-}
-
-/* Articles div CSS */
-
-.container {
-  width: 90%;
-  max-width: 1000px;
-  padding-top: 1.5em;
-  margin: 0 auto;
-  font-family: "Source Sans 3", sans-serif;
-}
-
-/* CSS Grid Magic */
-.posts {
-  display: grid;
-  gap: 1em;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-auto-rows: min-content;
-}
-
-article {
-  margin-bottom: 1em;
-}
-
-img {
-  width: 100%;
-}
-
-.article-info {
-  text-transform: uppercase;
-}
-
-.article-img {
-  margin-bottom: 1em;
-}
-
-.article-title {
-  font-size: 1.5rem;
-  margin: 0.5em 0 0.35em 0;
-}
-
-.article-preview {
-  margin-top: 0;
-}
-
-p {
-  line-height: 1.3;
-}
-
-/*  */
-
-/* .arcticlesDiv {
-  padding: 1.25rem;
-  margin: 0 auto;
-}
-
-.acrticleDivTitle {
-  font-weight: 700;
-  font-size: 1rem;
-  font-family: "Source Sans 3", sans-serif;
-  text-align: center;
-}
-
-.articlesContainer {
-  display: grid;
-  gap: 1em;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-auto-rows: 450px;
-} */
-
-/* article {
-  padding: 1.25em 0;
-} */
-
-/* .articleImg {
-  width: 100%;
-  height: 70%;
-}
-
-.article-header p,
-.article-header h2,
-.article-header h3 {
-  font-family: "Source Sans 3", sans-serif;
-  margin: 0;
-}
-
-.article-header p {
-  font-size: 0.875rem;
-  padding: 0.57em 0 0 0;
-}
-
-.article-header h2 {
-  font-size: 1.5rem;
-  padding: 0.25em 0 0 0;
-}
-
-.article-header h3 {
-  font-size: 1rem;
-  font-weight: 400;
-  padding: 0.375em 0 0 0;
-  line-height: 1.3;
-} */
-
-/* View btn CSS */
-
-.viewMBtnDiv {
-  text-align: center;
-  padding: 0 0 1.875em 0;
-}
-
-.viewMBtn {
-  text-decoration: underline;
-  background: none;
-  border: none;
-  font-size: 1rem;
-  font-family: "Source Sans 3", sans-serif;
-  font-weight: 700;
-}
-
-.viewMBtn:active,
-.viewMBtn:focus {
-  outline: none;
-}
-
-/* Media queries */
-
-/* Tablet, laptop, bigger screens */
-@media (min-width: 480px) {
-  /* Header */
-  .mainHeader {
-    padding: 0.31em 1.25em;
-    margin: 0.31em 1.25em;
-  }
-
-  .headerBtn {
-    font-size: 1rem;
-  }
-
-  .logoImg {
-    width: 34px;
-    height: 34px;
-  }
-
-  .logoText {
-    font-size: 1.25rem;
-  }
-
-  /* Hero post */
-  .heroPostText p {
-    width: 80%;
-  }
-
-  /* article {
-    padding: 1.25em 0;
-    margin-bottom: 1em;
-  } */
-}
-
-/* Support classes */
-
-.hidden {
+.hamburger {
   display: none;
 }
 
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
+}
+
+.nav-link:hover {
+  color: #482ff7;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #482ff7;
+}
