@@ -19,9 +19,13 @@ a {
   text-decoration: none;
 }
 
-/* .header {
-  border-bottom: 1px solid #e2e8f0;
-} */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.25em 0.75em;
+  padding: 0.25em 0.75em;
+  /* border-bottom: 1px solid #e2e8f0; */
+}
 
 .navbar {
   display: flex;
