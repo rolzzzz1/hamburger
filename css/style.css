@@ -136,3 +136,20 @@ a {
 .headerBtn:focus {
   outline: none;
 }
+
+.logoDiv {
+  align-items: center;
+}
+
+.logoImg {
+  width: 23px;
+  height: 23px;
+}
+
+.logoText {
+  display: inline;
+  font-size: 0.844rem;
+  padding: 0 0.37em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
