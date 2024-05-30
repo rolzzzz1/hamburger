@@ -27,8 +27,8 @@ a {
 
 .header {
   justify-content: space-between;
-  margin: 0.25em 0.75em;
-  padding: 0.25em 0.75em;
+  margin: 0.5em 1em;
+  padding: 0.5em 1em;
   /* border-bottom: 1px solid #e2e8f0; */
 }
 
