@@ -19,8 +19,13 @@ a {
   text-decoration: none;
 }
 
-.header {
+.header,
+.logoDiv,
+.headerBtnDiv {
   display: flex;
+}
+
+.header {
   justify-content: space-between;
   margin: 0.25em 0.75em;
   padding: 0.25em 0.75em;
