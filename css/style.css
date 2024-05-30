@@ -109,3 +109,24 @@ a {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
+/* Old CSS */
+
+.headerBtnDiv {
+  align-items: center;
+  column-gap: 0.94em;
+}
+
+.headerBtn {
+  background: none;
+  border: none;
+  font-size: 0.75rem;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.headerBtn:active,
+.headerBtn:focus {
+  outline: none;
+}
